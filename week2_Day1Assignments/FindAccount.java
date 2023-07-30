@@ -53,7 +53,8 @@ public class FindAccount
 		String description=driver.findElement(By.name("description")).getAttribute("value");
 		System.out.println(description);
 		
-		System.out.println("Title: "+driver.getTitle());
+		String Title = driver.getTitle();
+		System.out.println(Title);
 		
 		driver.close();
 	}
